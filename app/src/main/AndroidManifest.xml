@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bbt_true_app">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,26 +11,68 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ThanksActivity"></activity>
-        <activity android:name=".PersonalActivity" />
-        <activity android:name=".NichenActivity" />
-        <activity android:name=".MissionActivity" />
-        <activity android:name=".MimaActivity" />
-        <activity android:name=".MessageActivity" />
-        <activity android:name=".LookedActivity" />
-        <activity android:name=".HelpActivity" />
-        <activity android:name=".FabuActivity" />
-        <activity android:name=".BianjiActivity" />
-        <activity android:name=".AgreementActivity" />
-        <activity android:name=".AboutActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".LoginActivity"
+            android:label="登陆">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="注册" />
+        <activity
+            android:name=".MainActivity"
+            android:label="APP名字"
+            android:theme="@style/FitTheme" />
+        <activity
+            android:name=".FabuActivity"
+            android:label="发布任务" />
+        <activity
+            android:name=".PersonalActivity"
+            android:label="个人主页"
+            android:theme="@style/FitTheme" />
+        <activity
+            android:name=".BianjiActivity"
+            android:label="编辑个人资料" />
+        <activity
+            android:name=".MimaActivity"
+            android:label="修改密码" />
+        <activity
+            android:name=".NichenActivity"
+            android:label="修改昵称" />
+        <activity
+            android:name=".LookedActivity"
+            android:label="浏览记录" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="关于" />
+        <activity
+            android:name=".HelpActivity"
+            android:label="帮助" />
+        <activity
+            android:name=".AgreementActivity"
+            android:label="用户协议" />
+        <activity
+            android:name=".ThanksActivity"
+            android:label="特别感谢" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.bbt_new_app.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <activity
+            android:name=".MessageActivity"
+            android:label="具体用户名字"/>
+        <activity
+            android:name=".MissionActivity"
+            android:label="任务">
         </activity>
     </application>
 
