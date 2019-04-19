@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mission_item"
+        android:icon="@drawable/mission_selector"
+        android:title="任务" />
+    <item
+        android:id="@+id/message_item"
+        android:icon="@drawable/message_selector"
+        android:title="消息" />
+    <item
+        android:id="@+id/more_item"
+        android:icon="@drawable/fabu_selector"
+        android:title="更多" />
+</menu>

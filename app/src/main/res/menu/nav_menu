@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/fabu"
+            android:icon="@drawable/fabu_dark"
+            android:title="发布任务"/>
+
+        <item
+            android:id="@+id/personal"
+            android:icon="@drawable/personal"
+            android:title="个人主页"/>
+
+        <item
+            android:id="@+id/looked"
+            android:icon="@drawable/look"
+            android:title="浏览记录"/>
+
+        <item
+            android:id="@+id/exit"
+            android:icon="@drawable/exit"
+            android:title="退出账号"/>
+    </group>
+</menu>

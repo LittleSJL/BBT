@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:fitsSystemWindows="true"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_red_dark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <EditText
+        android:id="@+id/account_register"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="  登录名:"/>
+
+    <EditText
+        android:id="@+id/password_1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="  密码:"/>
+
+    <EditText
+        android:id="@+id/password_2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="  再次输入密码:"/>
+
+    <Button
+        android:id="@+id/registe"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_shape"/>
+</LinearLayout>
